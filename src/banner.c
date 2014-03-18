@@ -13,18 +13,25 @@ static void newline(){
   printf(_n);
 }
 
+static void printcell(int cell){
+  if(cell)
+    printf(_1);
+  else{
+    printf(_0);
+  }
+
+  fflush(stdout);
+
+  if(DELAY){
+    usleep(DELAY * 1000);
+  }
+}
+
 static void println(int block1, int block2, int block3, int block4){
-  if(block1)    printf(_1);
-  else          printf(_0);
-
-  if(block2)    printf(_1);
-  else          printf(_0);
-
-  if(block3)    printf(_1);
-  else          printf(_0);
-
-  if(block4)    printf(_1);
-  else          printf(_0);
+  printcell(block1);
+  printcell(block2);
+  printcell(block3);
+  printcell(block4);
 }
 
 void banner(char *in){
@@ -1302,7 +1309,7 @@ void banner(char *in){
             }
             break;
         }
-        if(DELAY)usleep(DELAY * 1000);
+        fflush(stdout);
         j++;
       }
       newline();
