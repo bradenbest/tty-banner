@@ -1,0 +1,9 @@
+To install
+
+  make 
+  sudo make install
+
+Or, for an alternate setting
+
+  make mintbanner-3D
+  sudo make install
