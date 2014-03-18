@@ -1,5 +1,7 @@
 #include <stdio.h>
+
 #include "banner.h"
+
 int main(int argc, char **argv){
   int i;
   if(argc == 2){
@@ -13,4 +15,3 @@ int main(int argc, char **argv){
   }
   return 0;
 }
-

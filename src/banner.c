@@ -1,17 +1,15 @@
-// Warning: this file is ugly
-// Don't expect this to work in windows
-// Dunno about OS X
-
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+
 #include "banner.h"
 
-void reset(){
+static void reset(){
   printf(_0 _n);
+  fflush(stdout);
 }
 
-void newline(){
+static void newline(){
   printf(_n);
 }
 
