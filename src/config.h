@@ -9,6 +9,6 @@
  *    6 - pale blue
  *    7 - white
  */
-#  define COLOR "2"
+#  define COLOR "7"
 #  define DELAY  0 // In Milliseconds
 #endif
