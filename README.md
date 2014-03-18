@@ -35,4 +35,4 @@ So, after figuring all that out, I defined two space characters that were colore
 `_0` is the same thing, but with default colors<br>
 `_n` is a newline
 
-To change the color, edit the Makefile. I plan to fix this to **not** use a Makefile, and instead use an .h file
+To change the color, edit the Makefile. I plan to fix this to **not** use a Makefile for that, and instead use an .h file
