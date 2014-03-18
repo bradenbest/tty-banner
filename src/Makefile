@@ -1,14 +1,16 @@
 FLAGS=-Wall -O2
 TARGET=tty-banner
-FILES=main.c banner.c
+OBJS=main.o banner.o
 
-$(TARGET): $(FILES)
-	gcc $^ $(FLAGS) -o $(TARGET)
+all: $(OBJS)
+	gcc $(OBJS) -o $(TARGET) $(FLAGS)
 
-install: $(TARGET)
-	mv $(TARGET) /usr/local/bin/
+main.o: main.c
+	gcc -c main.c
+banner.o: banner.c banner.h config.h
+	gcc -c banner.c
 
-uninstall: 
-	rm /usr/local/bin/$(TARGET)
+clean:
+	rm $(OBJS)
 
-.PHONY: $(TARGET)
+.PHONY: all clean

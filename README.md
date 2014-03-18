@@ -2,6 +2,21 @@
 
 Creates a colorful banner
 
+To compile
+-
+
+    make
+
+To install (automatically compiles)
+-
+
+    sudo make install
+
+To uninstall
+-
+
+    sudo make uninstall
+
 How it works
 -
 Every char is 4 x 5 `cells`, the fourth column being reserved for kerning purposes. Padding, if you will.
