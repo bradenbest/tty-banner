@@ -2,20 +2,25 @@
 
 Creates a colorful banner
 
+Usage
+-
+
+    $ tty-banner [string 1] [string 2] [...]
+
 To compile
 -
 
-    make
+    $ make
 
 To install (automatically compiles)
 -
 
-    sudo make install
+    $ sudo make install
 
 To uninstall
 -
 
-    sudo make uninstall
+    $ sudo make uninstall
 
 How it works
 -
