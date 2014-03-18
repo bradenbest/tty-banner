@@ -13,6 +13,20 @@ static void newline(){
   printf(_n);
 }
 
+static void println(int block1, int block2, int block3, int block4){
+  if(block1)    printf(_1);
+  else          printf(_0);
+
+  if(block2)    printf(_1);
+  else          printf(_0);
+
+  if(block3)    printf(_1);
+  else          printf(_0);
+
+  if(block4)    printf(_1);
+  else          printf(_0);
+}
+
 void banner(char *in){
   int i = 0, 
       j = 0, 
@@ -29,19 +43,19 @@ void banner(char *in){
           case 'A':
             switch(i){
               case 0:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
             }
             break;
@@ -49,19 +63,19 @@ void banner(char *in){
           case 'B':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
@@ -69,19 +83,19 @@ void banner(char *in){
           case 'C':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 2:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 3:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
@@ -89,19 +103,19 @@ void banner(char *in){
           case 'D':
             switch(i){
               case 0:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
             }
             break;
@@ -109,19 +123,19 @@ void banner(char *in){
           case 'E':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 2:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
               case 3:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
@@ -129,19 +143,19 @@ void banner(char *in){
           case 'F':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 2:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
               case 3:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 4:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
             }
             break;
@@ -149,19 +163,19 @@ void banner(char *in){
           case 'G':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 2:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
@@ -169,19 +183,19 @@ void banner(char *in){
           case 'H':
             switch(i){
               case 0:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
             }
             break;
@@ -189,19 +203,19 @@ void banner(char *in){
           case 'I':
             switch(i){
               case 0:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 1:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 2:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 3:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 4:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
             }
             break;
@@ -209,19 +223,19 @@ void banner(char *in){
           case 'J':
             switch(i){
               case 0:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 1:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 2:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 3:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
@@ -229,19 +243,19 @@ void banner(char *in){
           case 'K':
             switch(i){
               case 0:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
             }
             break;
@@ -249,19 +263,19 @@ void banner(char *in){
           case 'L':
             switch(i){
               case 0:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 1:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 2:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 3:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
@@ -269,19 +283,19 @@ void banner(char *in){
           case 'M':
             switch(i){
               case 0:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 1:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 2:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
             }
             break;
@@ -289,19 +303,19 @@ void banner(char *in){
           case 'N':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
             }
             break;
@@ -310,19 +324,19 @@ void banner(char *in){
           case 'O':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
@@ -330,19 +344,19 @@ void banner(char *in){
           case 'P':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 4:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
             }
             break;
@@ -350,19 +364,19 @@ void banner(char *in){
           case 'Q':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _1);
+                println(1, 1, 1, 1);
                 break;
             }
             break;
@@ -370,19 +384,19 @@ void banner(char *in){
           case 'R':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
             }
             break;
@@ -391,19 +405,19 @@ void banner(char *in){
           case 'S':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 2:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 3:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
@@ -411,19 +425,19 @@ void banner(char *in){
           case 'T':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 2:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 3:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 4:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
             }
             break;
@@ -431,19 +445,19 @@ void banner(char *in){
           case 'U':
             switch(i){
               case 0:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
@@ -451,19 +465,19 @@ void banner(char *in){
           case 'V':
             switch(i){
               case 0:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
             }
             break;
@@ -471,19 +485,19 @@ void banner(char *in){
           case 'W':
             switch(i){
               case 0:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 3:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 4:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
             }
             break;
@@ -491,19 +505,19 @@ void banner(char *in){
           case 'X':
             switch(i){
               case 0:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
             }
             break;
@@ -511,19 +525,19 @@ void banner(char *in){
           case 'Y':
             switch(i){
               case 0:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 3:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 4:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
             }
             break;
@@ -531,19 +545,19 @@ void banner(char *in){
           case 'Z':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 2:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 3:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
@@ -553,152 +567,152 @@ void banner(char *in){
           case '1':
             switch(i){
               case 0:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 1:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
               case 2:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 3:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
           case '2':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
           case '3':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 3:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
           case '4':
             switch(i){
               case 0:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 3:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 4:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
             }
             break;
           case '6':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 2:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
           case '7':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 2:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 3:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 4:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
             }
             break;
           case '8':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
           case '9':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 3:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
@@ -706,420 +720,420 @@ void banner(char *in){
           case ' ':
             switch(i){
               case 0:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 1:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 2:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 3:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 4:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
             }
             break;
           case '!':
             switch(i){
               case 0:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 1:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 2:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 3:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 4:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
             }
             break;
           case '@':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 3:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 4:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
             }
             break;
           case '#':
             switch(i){
               case 0:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 1:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 2:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 3:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 4:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
             }
             break;
           case '$':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
               case 2:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 3:
-                printf(_0 _1 _1 _0);
+                println(0, 1, 1, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
             }
             break;
           case '%':
             switch(i){
               case 0:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 1:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 2:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 3:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 4:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
             }
             break;
           case '^':
             switch(i){
               case 0:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 3:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 4:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
             }
             break;
           case '&':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 3:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _1);
+                println(1, 1, 1, 1);
                 break;
             }
             break;
           case '*':
             switch(i){
               case 0:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 1:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 2:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 3:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 4:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
             }
             break;
           case '(':
             switch(i){
               case 0:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 1:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 2:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 3:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 4:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
             }
             break;
           case ')':
             switch(i){
               case 0:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 1:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 2:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 3:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 4:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
             }
             break;
           case '{':
             switch(i){
               case 0:
-                printf(_0 _1 _1 _0);
+                println(0, 1, 1, 0);
                 break;
               case 1:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 2:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
               case 3:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 4:
-                printf(_0 _1 _1 _0);
+                println(0, 1, 1, 0);
                 break;
             }
             break;
           case '}':
             switch(i){
               case 0:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
               case 1:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 2:
-                printf(_0 _1 _1 _0);
+                println(0, 1, 1, 0);
                 break;
               case 3:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 4:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
             }
             break;
           case '[':
             switch(i){
               case 0:
-                printf(_0 _1 _1 _0);
+                println(0, 1, 1, 0);
                 break;
               case 1:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 2:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 3:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 4:
-                printf(_0 _1 _1 _0);
+                println(0, 1, 1, 0);
                 break;
             }
             break;
           case ']':
             switch(i){
               case 0:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
               case 1:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 2:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 3:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 4:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
             }
             break;
           case '-':
             switch(i){
               case 0:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 1:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 2:
-                printf(_1 _1 _0 _0);
+                println(1, 1, 0, 0);
                 break;
               case 3:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 4:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
             }
             break;
           case '=':
             switch(i){
               case 0:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 1:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 2:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 3:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 4:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
             }
             break;
           case '_':
             switch(i){
               case 0:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 1:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 2:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 3:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 4:
-                printf(_1 _1 _1 _1);
+                println(1, 1, 1, 1);
                 break;
             }
             break;
           case '+':
             switch(i){
               case 0:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 1:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 2:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 3:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 4:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
             }
             break;
           case '/':
             switch(i){
               case 0:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 1:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 2:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 3:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 4:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
             }
             break;
           case '\\':
             switch(i){
               case 0:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 1:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 2:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 3:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 4:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
             }
             break;
           case ',':
             switch(i){
               case 0:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 1:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 2:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 3:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 4:
                 switch(k){ // I'll admit that I'm cheating here by straying from the model I set up.
                   case 2:
-                    printf(_0 _1 _0 _0);
+                    println(0, 1, 0, 0);
                     break;
                   case 1:
                     printf(_0 _bla "  " _col "  " _0 _0);
@@ -1131,151 +1145,151 @@ void banner(char *in){
           case '.':
             switch(i){
               case 0:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 1:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 2:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 3:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 4:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
             }
             break;
           case '<':
             switch(i){
               case 0:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 1:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 2:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 3:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 4:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
             }
             break;
           case '>':
             switch(i){
               case 0:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 1:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 2:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 3:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 4:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
             }
             break;
           case '?':
             switch(i){
               case 0:
-                printf(_1 _1 _1 _0);
+                println(1, 1, 1, 0);
                 break;
               case 1:
-                printf(_0 _0 _1 _0);
+                println(0, 0, 1, 0);
                 break;
               case 2:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 3:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 4:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
             }
             break;
           case '\'':
             switch(i){
               case 0:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 1:
-                printf(_1 _0 _0 _0);
+                println(1, 0, 0, 0);
                 break;
               case 2:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 3:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 4:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
             }
             break;
           case '"':
             switch(i){
               case 0:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 1:
-                printf(_1 _0 _1 _0);
+                println(1, 0, 1, 0);
                 break;
               case 2:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 3:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 4:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
             }
             break;
           case ':':
             switch(i){
               case 0:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 1:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 2:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 3:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 4:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
             }
             break;
           case ';':
             switch(i){
               case 0:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 1:
-                printf(_0 _1 _0 _0);
+                println(0, 1, 0, 0);
                 break;
               case 2:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
               case 3:
                 switch(k){
                   case 2:
-                    printf(_0 _1 _0 _0);
+                    println(0, 1, 0, 0);
                     break;
                   case 1:
                     printf(_0 _bla "  " _col "  " _0 _0);
@@ -1283,7 +1297,7 @@ void banner(char *in){
                 }
                 break;
               case 4:
-                printf(_0 _0 _0 _0);
+                println(0, 0, 0, 0);
                 break;
             }
             break;
