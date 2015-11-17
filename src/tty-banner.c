@@ -30,8 +30,23 @@ void bprint(sym *font, char *src, int fg, int bg){
         j,
         k;
     sym *sel;
-    char frag;
+    char frag,
+         *srcbuf = 0,
+         *srcbp;
 
+    if(src[0] == 0){
+        srcbuf = calloc(sizeof(char), 30);
+        srcbp = srcbuf;
+        src = srcbuf;
+        while((i = fgetc(stdin)) != EOF){
+        /* Why this and not fgets? fgets breaks after a newline. */
+            *srcbp = i;
+            srcbp++;
+            if(srcbp - srcbuf >= 29){
+                break;
+            }
+        }
+    }
     for(i = 0; i < 5; i++){
         for(j = 0; j < strlen(src); j++){
             for(k = 0; k < 4; k++){
@@ -53,6 +68,9 @@ void bprint(sym *font, char *src, int fg, int bg){
             }
         }
         fputc('\n', stdout);
+    }
+    if(srcbuf){
+        free(srcbuf);
     }
 }
 
@@ -150,13 +168,17 @@ sym *new_font(char *font_src){
         }
         bp++;
     }
+    if(buf){
+        free(buf);
+    }
     return font;
 }
 
 void usage(char *progname){
     printf("Usage: %s [options]\n", progname);
     printf( "Options:\n"
-            "  -t [text]  Text to display.       Required\n"
+            "  -t [text]  Text to display.       Required. -s is an alternative\n"
+            "  -s         Get text from stdin.\n"
             "  -f [0..7]  Foreground color.      Default 7\n"
             "  -b [0..7]  Background color.      Default 0\n"
             "  -F [file]  File to use for font.  Default <internal>\n"
@@ -165,7 +187,7 @@ void usage(char *progname){
 }
 
 void version(){
-    printf("tty-banner v2.0.0-r2015-11-17 by Braden Best\n");
+    printf("tty-banner v2.1-r2015-11-17 by Braden Best\n");
     exit(0);
 }
 
@@ -180,23 +202,29 @@ int main(int argc, char **argv){
         i;
 
     if(argc > 1){
-        for(i = 1; i < argc;){
+        for(i = 1; i < argc; i++){
             opt = argv[i];
             arg = argv[i+1];
-            i+=2;
             if(opt[0] == '-'){
                 switch(opt[1]){
                     case 't':
                         msg = arg;
+                        i++;
+                        break;
+                    case 's':
+                        msg = "\0";
                         break;
                     case 'f':
                         fg = arg[0] - '0';
+                        i++;
                         break;
                     case 'b':
                         bg = arg[0] - '0';
+                        i++;
                         break;
                     case 'F':
                         font_src = arg;
+                        i++;
                         break;
                     case 'v':
                         version();
