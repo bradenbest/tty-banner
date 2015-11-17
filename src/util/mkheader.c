@@ -13,7 +13,9 @@ int main(int argc, char **argv){
     if(argc > 1){
         limit = atoi(argv[1]);
     }
-    printf("unsigned char " VARNAME "[] = {");
+    printf( "#ifndef " VARNAME "_h\n"
+            "#define " VARNAME "_h\n"
+            "unsigned char " VARNAME "[] = {");
 
     while((c = fgetc(stdin)) != EOF){
         if(cycle == limit && limit > 0){
@@ -26,7 +28,8 @@ int main(int argc, char **argv){
     }
 
     printf( "\n};\n"
-            "unsigned int " VARNAME "_len = %u;\n",
+            "unsigned int " VARNAME "_len = %u;\n"
+            "#endif\n",
             cycle);
 
     return 0;
