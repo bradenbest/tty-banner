@@ -1,0 +1,21 @@
+Format:
+
+An entry looks like this:
+
++A
+. * . .
+* . * .
+* * * .
+* . * .
+* . * .
+-
+
+'+' denotes the character the glyph represents. In this case, 'A'. The character must immediately follow the +.
+
+After this, it's a series of exactly 20 (4x5) characters of either '*' (1) or '.' (0). Whitespace is allowed.
+
+The sequence is ended by a '-'
+
+Ideally, you want to leave the fourth column blank for kerning purposes. You don't want the text smashed together, now, do you?
+
+When stripped, it would look like this: +A.*..*.*.***.*.*.*.*.-
