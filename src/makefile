@@ -1,14 +1,14 @@
-all: default_fnt.h
-	gcc tty-banner.c -o tty-banner
+tty-banner: default_fnt.h
+	gcc tty-banner.c -o $@
 
 strip:
-	gcc strip.c -o strip
+	gcc util/strip.c -o $@
 
 mkheader:
-	gcc mkheader.c -o mkheader
+	gcc util/mkheader.c -o $@
 
 default_fnt.h: strip mkheader
-	./strip fonts/default.fnt | ./mkheader > default_fnt.h
+	./strip fonts/default.fnt | ./mkheader > $@
 
 clean:
 	rm tty-banner strip mkheader default_fnt.h
